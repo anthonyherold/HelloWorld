@@ -1,16 +1,60 @@
-.lienscentre {
-  display: block;
-  width: 100%;
-  text-align: center;
+/* ----- ENTETE ---- */
+#header {
+  height: 100%;
 }
 
-h1 {
+.titre-principal {
+  //z-index: 2;
+
   width: 100%;
-  line-height: 75vh;
-  font-family: 'Abril Fatface', sans-serif;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
 }
 
-h2 {
-  width: 100%;
-  font-family: 'Abril Fatface', sans-serif;
+#apropos {
+  h2 {
+    margin-bottom: 110px;
+  }
+}
+#portfolio {
+  h2 {
+    margin-bottom: 85px;
+  }
+}
+#blog {
+  h2 {
+    margin-bottom: 65px;
+  }
+  img {
+    margin-bottom: 40px;
+  }
+}
+
+.social {
+  a {
+    padding: 0 !important;
+  }
+}
+/* ----- OUTILS ---- */
+.liencentre {
+  display: block;         // --> Transformer le lien de Inline en Block
+  width: 100%;            // --> Toute la largeur de la zone (De la page)
+  text-align: center;     // --> Texte est aligné au centre
+
+  font-size: 2.25rem;     // 36 / 16 = 2,25 ---- 2.25rem
+
+  &.descente {
+    position: absolute;     // --> Positionné à 75px du bas de la zone
+    bottom: 75px;
+  }
+}
+.documentsections {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 185px;
+}
+
+figure {
+  margin: 0;
 }
